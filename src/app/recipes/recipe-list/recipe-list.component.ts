@@ -23,9 +23,7 @@ export class RecipeListComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(): void {}
 
   onRecipeSelected(recipe: Recipe) {
     this.recipeSelected.emit(recipe);
