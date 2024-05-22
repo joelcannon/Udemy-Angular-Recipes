@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12">
-    <form (submit)="onAddItem($event)">
+    <form>
       <div class="row">
         <div class="col-sm-5 form-group">
           <label for="name">Name</label>
@@ -13,9 +13,27 @@
       </div>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-success" type="submit">Add</button>
-          <button class="btn btn-danger" type="submit">Delete</button>
-          <button class="btn btn-primary" type="submit">Clear</button>
+          <button
+            class="btn btn-success"
+            type="button"
+            (click)="onAddItem($event)"
+          >
+            Add
+          </button>
+          <button
+            class="btn btn-danger"
+            type="button"
+            (click)="onDelete($event)"
+          >
+            Delete
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            (click)="onClear($event)"
+          >
+            Clear
+          </button>
         </div>
       </div>
     </form>

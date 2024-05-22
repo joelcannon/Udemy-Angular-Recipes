@@ -25,4 +25,14 @@ export class ShoppingEditComponent implements OnInit {
     const newIngredient = new Ingredient(ingredientName, ingredientAmount);
     this.slService.addIngredient(newIngredient);
   }
+
+  onDelete(event: Event) {
+    event.preventDefault();
+    // Add code here to delete an ingredient
+  }
+
+  onClear(event: Event) {
+    event.preventDefault();
+    // Add code here to delete an ingredient
+  }
 }
