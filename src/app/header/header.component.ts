@@ -7,14 +7,4 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
-  @Output() displayRecipesEvent = new EventEmitter<void>();
-  @Output() displayShoppingListEvent = new EventEmitter<void>();
-
-  onRecipesButtonClicked() {
-    this.displayRecipesEvent.emit();
-  }
-
-  onShoppingListButtonClicked() {
-    this.displayShoppingListEvent.emit();
-  }
 }

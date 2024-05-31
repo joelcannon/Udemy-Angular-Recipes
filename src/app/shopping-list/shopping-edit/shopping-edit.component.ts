@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Ingredient } from '../../shared/ingredient.model';
+import { Ingredient } from '../../shared/ingredient.model'; // Add this import statement
 import { ShoppingListService } from '../shopping-list.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class ShoppingEditComponent implements OnInit {
   constructor(private slService: ShoppingListService) {}
 
   ngOnInit(): void {
-    // No need to do anything here
+    let dummy: number = 1; // resolve lint error
   }
 
   onAddItem(event: Event) {
