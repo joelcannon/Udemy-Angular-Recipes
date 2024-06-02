@@ -40,6 +40,10 @@ export class RecipeService {
     return this.recipes.slice();
   }
 
+  getRecipe(id: number) {
+    return this.recipes[id];
+  }
+
   onRecipeSelected(recipe: Recipe) {
     this.recipeSelected.next(recipe);
   }
